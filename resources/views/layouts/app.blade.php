@@ -10,11 +10,11 @@
     <title>{{ config('app.name', 'LSAPP') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
-        CKEDITOR.replace( 'article-ckeditor' );
-        </script>
+       { CKEDITOR.replace('form' )};
+     </script>
+      <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
