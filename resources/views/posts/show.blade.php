@@ -2,8 +2,8 @@
 
 @section('content')
 <a href="/posts" class="btn btn-outline-secondary mb-2" role="button"><span><<</span> Go Back</a>
-    <h1>{{$post->id}}</h1>
-    <img src="/storage/cover/_images/{{$post->cover_image}}" alt="image">
+    <h1>{{$post->title}}</h1>
+    <img src="/storage/cover_images/{{$post->cover_image}}" class="img-fluid" alt="image">
     <span class="d-block"></span>
     <div>{!!$post->body!!}</div> {{--  !!Parse as HTML comming from editor --}}
     <hr>

@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class PagesControllers extends Controller
 {
     public function index() {
+        if (auth()->user()) {
+            return redirect('/dashboard');
+         }
+
         $title = 'Welcome to Laravel!';
         return view('pages.index')->with('title', $title);
     }
